@@ -1,0 +1,14 @@
+.all{
+    margin: 20px;
+    display: flex;
+}
+.left{
+    width: 50%;
+    display: flex;
+    border: 2px solid black;
+}
+.image{border: 2px solid salmon;
+background: linear-gradient(grey, lightgrey);}
+.image_left{margin-top: 100px;
+border: 2px solid salmon;
+background: linear-gradient(grey, lightgrey);}
