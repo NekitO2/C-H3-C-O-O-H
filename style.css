@@ -1,14 +1,717 @@
-.all{
-    margin: 20px;
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-.left{
-    width: 50%;
-    display: flex;
-    border: 2px solid black;
+
+html, body {
+  min-height: 100%;
 }
-.image{border: 2px solid salmon;
-background: linear-gradient(grey, lightgrey);}
-.image_left{margin-top: 100px;
-border: 2px solid salmon;
-background: linear-gradient(grey, lightgrey);}
+
+@keyframes change-color-box{
+    0%{
+        background-color: rgb(2, 6, 7);
+    }
+    5%{
+        background-color: rgb(44, 13, 11);
+    }
+    10%{
+        background-color: rgba(216, 0, 0);
+    }
+    15%{
+        background-color: rgb(221, 71, 0);
+    }
+    20%{
+        background-color: rgb(197, 116, 41);
+    }
+    25%{
+        background-color: rgb(214, 118, 18);
+    }
+    30%{
+        background-color: rgb(243, 154, 26); 
+    }
+    35%{
+        background-color: rgb(124, 101, 23);
+    }
+    40%{
+        background-color: rgb(88, 119, 40);
+    }
+    45%{
+        background-color: rgb(74, 159, 117);
+    }
+    50%{
+        background-color: rgb(67, 119, 112);
+    }
+    55%{
+        background-color: rgb(5, 50, 19);
+    }
+    60%{
+        background-color: rgb(30, 112, 104); 
+    }
+    65%{
+        background-color: rgb(100, 146, 161);
+    }
+    70%{
+        background-color: rgb(28, 70, 92); 
+    }
+    75%{
+        background-color: rgb(7, 13, 68);
+    }
+    80%{
+        background-color: rgb(68, 68, 116);
+    }
+    85%{ 
+        background-color: rgb(101, 94, 177);
+    }
+    90%{ 
+        background-color: rgb(73, 71, 92); 
+    }
+    95%{
+        background-color: rgb(30, 29, 36); 
+    }
+    100%{
+        background-color: rgb(2, 6, 7);
+   }
+   
+}
+
+@keyframes change-color-box3{
+    0%{
+        background-color: rgb(192, 192, 192);
+    }
+    5%{
+        background-color: rgb(204, 96, 96);
+    }
+    10%{
+        background-color: rgba(216, 0, 0);
+    }
+    15%{
+        background-color: rgb(221, 71, 0);
+    }
+    20%{
+        background-color: rgb(197, 116, 41);
+    }
+    25%{
+        background-color: rgb(214, 118, 18);
+    }
+    30%{
+        background-color: rgb(243, 154, 26); 
+    }
+    35%{
+        background-color: rgb(124, 101, 23);
+    }
+    40%{
+        background-color: rgb(88, 119, 40);
+    }
+    45%{
+        background-color: rgb(74, 159, 117);
+    }
+    50%{
+        background-color: rgb(67, 119, 112);
+    }
+    55%{
+        background-color: rgb(5, 50, 19);
+    }
+    60%{
+        background-color: rgb(30, 112, 104); 
+    }
+    65%{
+        background-color: rgb(100, 146, 161);
+    }
+    70%{
+        background-color: rgb(28, 70, 92); 
+    }
+    75%{
+        background-color: rgb(7, 13, 68);
+    }
+    80%{
+        background-color: rgb(68, 68, 116);
+    }
+    85%{ 
+        background-color: rgb(101, 94, 177);
+    }
+    90%{ 
+        background-color: rgb(73, 71, 92); 
+    }
+    95%{
+        background-color: rgb(133, 132, 142); 
+    }
+    100%{
+        background-color: rgb(192, 192, 192);
+   }
+   
+}
+
+@keyframes change-color-clock{
+    0%{
+        color: rgb(2, 6, 7);
+        border: 2px solid rgb(2, 6, 7);
+    }
+    5%{
+        color: rgb(70, 65, 95); 
+        border: 2px solid rgb(70, 65, 95)
+    }
+    10%{ 
+        color: rgb(135, 131, 168); 
+        border: 2px solid rgb(135, 131, 168)
+    }
+    15%{ 
+        color: rgb(101, 94, 177);
+        border: 2px solid rgb(101, 94, 177)
+    }
+    20%{
+        color: rgb(68, 68, 116);
+        border: 2px solid rgb(68, 68, 116)
+    }
+    25%{
+        color: rgb(7, 13, 68);
+        border: 2px solid rgb(7, 13, 68)
+    }
+    30%{
+        color: rgb(28, 70, 92); 
+        border: 2px solid rgb(28, 70, 92)
+    }
+    35%{
+        color: rgb(100, 146, 161);
+        border: 2px solid rgb(100, 146, 161)
+    }
+    40%{
+        color: rgb(30, 112, 104); 
+        border: 2px solid rgb(30, 112, 104)
+    }
+    45%{
+        color: rgb(5, 50, 19);
+        border: 2px solid rgb(5, 50, 19)
+    }
+    50%{
+        color: rgb(67, 119, 112);
+        border: 2px solid rgb(67, 119, 112)
+    }
+    55%{
+        color: rgb(74, 159, 117);
+        border: 2px solid rgb(74, 159, 117)
+    }
+    60%{
+        color: rgb(88, 119, 40);
+        border: 2px solid rgb(88, 119, 40)
+    }
+    65%{
+        color: rgb(124, 101, 23);
+        border: 2px solid rgb(124, 101, 23)
+    }
+    70%{
+        color: rgb(243, 154, 26); 
+        border: 2px solid rgb(243, 154, 26)
+    }
+    75%{
+        color: rgb(214, 118, 18);
+        border: 2px solid rgb(214, 118, 18)
+    }
+    80%{
+        color: rgb(197, 116, 41);
+        border: 2px solid rgb(197, 116, 41)
+    }
+    85%{
+        color: rgb(221, 71, 0);
+        border: 2px solid rgb(221, 71, 0)
+    }
+    90%{
+        color: rgba(216, 0, 0);
+        border: 2px solid rgba(216, 0, 0)
+    }
+    95%{
+        color: rgb(107, 61, 58);
+        border: 2px solid rgb(107, 61, 58)
+    }
+    100%{
+        color: rgb(2, 6, 7);
+        border: 2px solid rgb(2, 6, 7)
+    }
+}
+
+@keyframes change-color-streaks{
+    0%{
+        background: rgb(2, 6, 7);
+    }
+    5%{
+        background: rgb(70, 65, 95); 
+    }
+    10%{ 
+        background: rgb(135, 131, 168);
+    }
+    15%{ 
+        background: rgb(101, 94, 177);
+    }
+    20%{
+        background: rgb(68, 68, 116);
+    }
+    25%{
+        background: rgb(7, 13, 68);
+    }
+    30%{
+        background: rgb(28, 70, 92); 
+    }
+    35%{
+        background: rgb(100, 146, 161);
+    }
+    40%{
+        background: rgb(30, 112, 104); 
+    }
+    45%{
+        background: rgb(5, 50, 19);
+    }
+    50%{
+        background: rgb(67, 119, 112);
+    }
+    55%{
+        background: rgb(74, 159, 117);
+    }
+    60%{
+        background: rgb(88, 119, 40);
+    }
+    65%{
+        background: rgb(124, 101, 23);
+    }
+    70%{
+        background: rgb(243, 154, 26); 
+    }
+    75%{
+        background: rgb(214, 118, 18);
+    }
+    80%{
+        background: rgb(197, 116, 41);
+    }
+    85%{
+        background: rgb(221, 71, 0);
+    }
+    90%{
+        background: rgba(216, 0, 0);
+    }
+    95%{
+        background: rgb(107, 61, 58);
+    }
+    100%{
+        background: rgb(192, 192, 192);
+    }
+}
+
+@keyframes change-color-arrows{
+    0%{
+        background: rgb(2, 6, 7); 
+    }
+    5%{
+        background: rgb(16, 59, 55);
+    }
+    10%{
+        background: rgb(30, 112, 104); 
+    }
+    15%{
+        background: rgb(5, 50, 19);
+    }
+    20%{
+        background: rgb(67, 119, 112);
+    }
+    25%{
+        background: rgb(74, 159, 117);
+    }
+    30%{
+        background: rgb(88, 119, 40);
+    }
+    35%{
+        background: rgb(166, 137, 33);
+    }
+    40%{
+        background: rgb(243, 154, 26); 
+    }
+    45%{
+        background: rgb(214, 118, 18);
+    }
+    50%{
+        background: rgb(197, 116, 41);
+    }
+    55%{
+        background: rgb(221, 71, 0);
+    }
+    60%{
+        background: rgba(216, 0, 0);
+    }
+    65%{
+        background: rgb(212, 127, 147);
+    }
+    70%{
+        background: rgb(174, 166, 219); 
+    }
+    75%{ 
+        background: rgb(135, 131, 168); 
+    }
+    80%{ 
+        background: rgb(101, 94, 177);
+    }
+    85%{
+        background: rgb(55, 55, 146);
+    }
+    90%{
+        background: rgb(22, 33, 136);
+    }
+    95%{
+        background: rgb(12, 20, 72); 
+    }    
+    100%{
+        background: rgb(2, 6, 7);  
+    }
+}
+
+@keyframes change-color-second-arrow{
+    0%{
+        background:   rgb(122, 16, 16) ;
+
+    }
+    5%{
+        background: rgb(88, 64, 64);
+    }
+    10%{
+        background: rgb(30, 112, 104); 
+    }
+    15%{
+        background: rgb(5, 50, 19);
+    }
+    20%{
+        background: rgb(67, 119, 112);
+    }
+    25%{
+        background: rgb(74, 159, 117);
+    }
+    30%{
+        background: rgb(88, 119, 40);
+    }
+    35%{
+        background: rgb(166, 137, 33);
+    }
+    40%{
+        background: rgb(243, 154, 26); 
+    }
+    45%{
+        background: rgb(214, 118, 18);
+    }
+    50%{
+        background: rgb(197, 116, 41);
+    }
+    55%{
+        background: rgb(221, 71, 0);
+    }
+    60%{
+        background: rgba(216, 0, 0);
+    }
+    65%{
+        background: rgb(212, 127, 147);
+    }
+    70%{
+        background: rgb(174, 166, 219); 
+    }
+    75%{ 
+        background: rgb(135, 131, 168); 
+    }
+    80%{ 
+        background: rgb(101, 94, 177);
+    }
+    85%{
+        background: rgb(55, 55, 146);
+    }
+    90%{
+        background: rgb(22, 33, 136);
+    }
+    95%{
+        background: rgb(96, 34, 102); 
+    }    
+    100%{
+        background: rgb(122, 16, 16) ;
+          
+    }
+}
+
+@keyframes rotating-box4 {
+    from{transform: rotateZ(0deg);}
+    50%{transform:  rotateZ(-180deg) scale(1.05, 1.05);}
+    to{transform:   rotateZ(-360deg) scale(1, 1);}
+}
+
+@keyframes rotating-box3 {
+    from{transform: rotateZ(0deg)    rotateY(0deg)    ;}
+    50%{transform:  rotateZ(180deg)  rotateY(540deg)  scale(1.05, 1.05);}
+    to{transform:   rotateZ(360deg)  rotateY(1080deg) scale(1, 1);}
+}
+
+@keyframes rotating-box2 {
+    from{transform:  rotateZ(0deg)    rotateY(0deg)    ;}
+    50%{transform:   rotateZ(-180deg) rotateY(540deg)  scale(1.05, 1.05);}
+    to{transform:    rotateZ(-360deg) rotateY(1080deg) scale(1, 1);}
+}
+
+@keyframes rotating-clock {
+    from{transform: rotateZ(0deg) scale(0.7, 0.7);}
+    50%{transform: rotateZ(180deg) scale(0.75, 0.75);}
+    to{transform: rotateZ(360deg) scale(0.7, 0.7);}
+}
+
+
+.box, .clock{
+    margin-top: 500px;
+}
+
+
+.box1{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 735px;
+    margin-top: -265px;
+    background-color: rgb(192, 192, 192);
+    /* border-radius: 150px; */
+    transform-origin: center;
+    z-index: 2;
+    scale: 0.7;
+}
+.box2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: 100px;
+    background-color: rgb(2, 6, 7);
+    /* border-radius: 150px; */
+    transform-origin: center;
+    z-index: 2;
+}
+.box3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: -50px;
+    background-color:rgb(192, 192, 192);
+    /* border-radius: 150px; */
+    transform-origin: center;
+    z-index: 2;
+    
+}
+
+.box4 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: -100px;
+    background-color: rgb(2, 6, 7);
+    z-index: 2;
+    
+    /* border-radius: 150px; */
+    transform-origin: center;
+}
+
+
+.box:hover .box4{
+    animation: change-color-box 30s linear infinite, rotating-box4 20s linear infinite reverse;
+    transition: all 5s ease-in;
+}
+
+.box:hover .box3{
+    animation: change-color-box3 90s linear infinite reverse, rotating-box3 20s linear infinite reverse ;
+    transition: all 5s ease-in;
+    
+}
+
+.box:hover .box2{
+    animation: change-color-box 40s linear infinite , rotating-box2 15s linear infinite reverse;
+    transition: all 5s ease-in;
+}
+
+.box:hover .box1{
+    animation: rotating-box4 60s linear infinite ;
+}
+
+.box:hover .clock{
+    animation: change-color-clock 35s linear infinite, rotating-clock 12s linear infinite;
+    transition: all 5s ease; 
+}
+.box:hover .top {
+    animation: change-color-streaks 35s linear infinite;
+    transition: all 5s ease;
+}
+.box:hover .bottom {
+    animation: change-color-streaks 35s linear infinite;
+    transition: all 5s ease;
+}
+.box:hover .right {
+    animation: change-color-streaks 35s linear infinite;
+    transition: all 5s ease;
+}
+.box:hover .left {
+    animation: change-color-streaks 35s linear infinite;
+    transition: all 5s ease;
+}
+.box:hover .center{
+    animation: change-color-streaks 35s linear infinite;
+    transition: all 5s ease;
+}
+
+.box:hover .hour:before{
+    animation: change-color-arrows 35s linear infinite;
+    transition: all 5s ease;
+}
+
+.box:hover .minute:before{
+    animation: change-color-arrows 35s linear infinite;
+    transition: all 5s ease;
+}
+
+.box:hover .second:before{
+    animation: change-color-second-arrow 35s linear infinite reverse;
+    transition: all 5s ease;
+}
+
+
+
+
+
+
+
+.clock { 
+    z-index: 2;
+  position: relative;
+  margin-top: -250px;
+  margin-left: 750px;
+  border: 2px solid rgb(2, 6, 7);
+  height: 200px;
+  width: 200px;
+  background: none;
+  box-sizing: border-box;
+  border-radius: 100%;
+  transform-origin: center;
+  transform: scale(0.7, 0.7);
+
+}
+  .top {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: rgb(2, 6, 7);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .right {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: rgb(2, 6, 7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+  }
+  .bottom {
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: rgb(2, 6, 7);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .left {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: rgb(2, 6, 7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+  }
+  .center {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgb(2, 6, 7);
+    border-radius: 100%;
+  }
+  
+  .hour {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    }
+    .hour:before {
+      position: absolute;
+      content: "";
+      background: rgb(2, 6, 7);
+      height: 60px;
+      width: 3px;
+      top: 30px;
+    }
+  
+  .minute {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+ }
+
+    .minute:before {
+      position: absolute;
+      content: "";
+      background: rgb(2, 6, 7);
+      height: 40px;
+      width: 2px;
+      top: 50px;
+    }
+ 
+  .second {
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+    .second::before {
+      position: absolute;
+      content: "";
+      background:   rgb(122, 16, 16) ;
+      height: 45px;
+      width: 4px;
+      top: 45px;
+    }
+
+
+.box:hover .second{animation: time 5s infinite linear;}
+.box:hover .minute{animation: time 15s infinite linear;}
+.box:hover .hour{animation: time 30s infinite linear;}
+
+@keyframes time {
+  to {transform: rotate(360deg);}
+}
