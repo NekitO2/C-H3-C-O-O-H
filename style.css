@@ -453,11 +453,9 @@ html, body {
     to{transform: rotateZ(360deg) scale(0.7, 0.7);}
 }
 
-
 .box, .clock{
     margin-top: 500px;
 }
-
 
 .box1{
     position: absolute;
@@ -501,7 +499,6 @@ html, body {
     /* border-radius: 150px; */
     transform-origin: center;
     z-index: 2;
-    
 }
 
 .box4 {
@@ -520,7 +517,6 @@ html, body {
     transform-origin: center;
 }
 
-
 .box:hover .box4{
     animation: change-color-box 30s linear infinite, rotating-box4 20s linear infinite reverse;
     transition: all 5s ease-in;
@@ -529,7 +525,6 @@ html, body {
 .box:hover .box3{
     animation: change-color-box3 90s linear infinite reverse, rotating-box3 20s linear infinite reverse ;
     transition: all 5s ease-in;
-    
 }
 
 .box:hover .box2{
@@ -582,11 +577,6 @@ html, body {
 }
 
 
-
-
-
-
-
 .clock { 
     z-index: 2;
   position: relative;
@@ -600,7 +590,6 @@ html, body {
   border-radius: 100%;
   transform-origin: center;
   transform: scale(0.7, 0.7);
-
 }
   .top {
     position: absolute;
@@ -670,7 +659,6 @@ html, body {
       width: 3px;
       top: 30px;
     }
-  
   .minute {
     width: 2px;
     height: 100%;
@@ -679,7 +667,6 @@ html, body {
     right: 0;
     margin: 0 auto;
  }
-
     .minute:before {
       position: absolute;
       content: "";
@@ -688,7 +675,6 @@ html, body {
       width: 2px;
       top: 50px;
     }
- 
   .second {
     width: 4px;
     height: 100%;
@@ -697,7 +683,6 @@ html, body {
     right: 0;
     margin: 0 auto;
   }
-
     .second::before {
       position: absolute;
       content: "";
@@ -706,8 +691,6 @@ html, body {
       width: 4px;
       top: 45px;
     }
-
-
 .box:hover .second{animation: time 5s infinite linear;}
 .box:hover .minute{animation: time 15s infinite linear;}
 .box:hover .hour{animation: time 30s infinite linear;}
